@@ -1,0 +1,19 @@
+const langButtons = document.querySelectorAll('.lang-button');
+const allElements = document.querySelectorAll('*');
+
+function changeLanguage(lang) {
+  allElements.forEach(element => {
+    const translation = element.getAttribute(`data-${lang}`);
+    if (translation) {
+      element.innerText = translation;
+    }
+  });
+}
+
+langButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    langButtons.forEach(b => b.classList.remove('active'));
+    button.classList.add('active');
+    changeLanguage(button.getAttribute('data-lang'));
+  });
+});

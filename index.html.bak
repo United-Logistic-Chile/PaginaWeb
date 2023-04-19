@@ -1,0 +1,105 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>U.S. United Logistics Inc. </title>
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jQuery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<div class="header"><div class="container"><div class="logo"><div class="ilogo"><img src="images/logo.jpg" /></div></div>
+<div class="headr"><div class="head"><a href="cn/index.asp"><img src="images/L-china.jpg" /></a>&nbsp;&nbsp;<a href="index.asp"><img src="images/L-english.jpg" />&nbsp;</a></div>
+<div class="nav">
+   <ul class="clear">
+   <li><a href="index.asp" class=""><div class="nav1"></div><p></p></a></li>
+   <li><a href="about.asp" class=""><div class="nav2"></div><p></p></a></li>
+   <li><a href="service.asp" class=""><div class="nav3"></div><p></p></a></li>
+   <li><a href="tracin.asp" class=""><div class="nav4"></div><p></p></a></li>
+   <li><a href="warehouse.asp" class=""><div class="nav5"></div><p></p></a></li>
+   <li><a href="contact.asp" class=""><div class="nav6"></div><p></p></a></li>
+  </ul>
+  </div>
+</div></div>
+<div class="banner"><div class="bannerh"><div class="banner_index">
+  <a href="javascript:void(0);" class="btn btnPre" id="banner_index_pre"></a>
+  <a href="javascript:void(0);" class="btn btnNext" id="banner_index_next"></a>
+    <ul class="banner_wrap" id="banner_index">
+      <li><img src="images/banner01.jpg"/></li>
+      <li><img src="images/banner02.jpg"/></li>
+      <li><img src="images/banner03.jpg"/></li>
+      <li><img src="images/banner04.jpg"/></li>
+    </ul>
+</div></div></div>
+<script type="text/javascript">
+var ShowPre1 = new ShowPre({box:"banner_index",Pre:"banner_index_pre",Next:"banner_index_next",numIco:"index_numIco",loop:1,auto:1});
+</script>
+
+<div class="hview container"><div class="hviewl">
+<div class="habout"><div class="ititle">Our company</div>
+  <div class="haboutn">Welcome to U.S. United Logistics Inc. UUL was established in 2004 with an ambition to continually develop logistics services in international transportation services through Ocean, Air, warehousing, domestic delivery, cargo consolidation and worldwide logistics. We serving in Mainland China and rushed out of China through our strong oversea partner or agent. We listen and observe, our customer's needs and recommending a logistics solution that will ultimately fulfill the client's objective. No matter how large or small shipment our experienced team will assist....</div></div>
+
+<div class="hpro"><a href="#"><img src="images/hpro1.jpg" alt="" title=""></a>
+      <a href="#"><img src="images/hpro2.jpg" alt="" title=""></a>
+      <a href="#"><img src="images/hpro3.jpg"  alt="" title=""></a></div>
+ </div> 
+  
+<div class="hviewr"><div class="login">
+
+<UL id='tags'><LI class='selectTag'>External Network</LI></UL><DIV class='tagContent'><form action='http://121.40.230.128:8001/mh_Online/ECLogin.aspx' target='_blank' method='post' name='form1' id='form1' /><input type='hidden' name='__VIEWSTATE' id='__VIEWSTATE' value='/wEPDwUJOTE1Mjg1NjI3D2QWAgIDD2QWAgIPDw8WAh4EVGV4dAUpPHNjcmlwdD5hbGVydCgnbG9naW4gZmFpbHVyZSEnKTs8L3NjcmlwdD5kZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAgUKQ2hrQWNjb3VudAUMSW1hZ2VCdXR0b24xAT/q5+EVvKO9wb3fP482HsNw3bc='><input type='hidden' name='__EVENTVALIDATION' id='__EVENTVALIDATION' value='/wEWBQKU3L7BDwKUj8fhDALJicSQAQK1qbSRCwLSwpnTCC7UEI+glY/YmVv9ZZejkMabxqYZ'><input id='ChkAccount' type='checkbox' name='ChkAccount' checked='checked' style='display:none;'><dl class='taginput tagname'><dt></dt><dd><input name='txtAccount' type='text' id='txtAccount' value='' /></dd></dl><dl class='taginput tagpass'><dt></dt><dd><input name='txtPassword' type='password' id='txtPassword' value='' /></dd></dl><div class='tagsub'><input type='image' name='ImageButton1' id='ImageButton1' value='' src='images/wu.gif' style='border-width:0px;' /></div></form></DIV>
+
+</div></div>
+
+</div>
+
+<div class="icases container" id="picdemo">
+  <div class="icasesbox">
+   <ul id="marquePic1">
+      
+  <li><a href="https://my.maerskline.com" target="_blank"><img src="upload/uploaddata/201682120055293.jpg" alt="" title="MSK"></a></li>
+  
+  <li><a href="http://www.hanjin.com/hanjin/CUP_HOM_3301.do" target="_blank"><img src="upload/uploaddata/2016821195216846.gif" alt="" title="HANJIN"></a></li>
+  
+  <li><a href="http://www.matson.com" target="_blank"><img src="upload/uploaddata/2016821194825570.jpg" alt="" title="MATSON"></a></li>
+  
+  <li><a href="https://www.nykline.com/ecom/CUP_HOM_3000.do?redir=Y" target="_blank"><img src="upload/uploaddata/2016821194327616.jpg" alt="" title="NYK"></a></li>
+  
+  <li><a href="http://www.apl.com/wps/portal/apl/etools/tracking" target="_blank"><img src="upload/uploaddata/2016821193347330.jpg" alt="" title="APL"></a></li>
+  
+  <li><a href="https://www.cma-cgm.com/" target="_blank"><img src="upload/uploaddata/2016821192736902.gif" alt="" title="CMA"></a></li>
+  
+  <li><a href="http://www.oocl.com/schi/Pages/default.aspx" target="_blank"><img src="upload/uploaddata/201436214028443.jpg" alt="" title="OOCL"></a></li>
+  
+  <li><a href="http://www.cscline.com/" target="_blank"><img src="upload/uploaddata/20143621385283.jpg" alt="" title="CSCL"></a></li>
+  
+  <li><a href="http://www.coscon.com/home.do" target="_blank"><img src="upload/uploaddata/201436213640774.jpg" alt="" title="COSCO"></a></li>
+  
+  <li><a href="http://www.wanhai.com/views/Main.xhtml" target="_blank"><img src="upload/uploaddata/201436213521516.jpg" alt="" title="WANHAI"></a></li>
+  
+  <li><a href="https://www.pilship.com/en-pil-pacific-international-lines/1.html" target="_blank"><img src="upload/uploaddata/201436213354676.jpg" alt="" title="PIL"></a></li>
+  
+  <li><a href="http://www.anl.com.au/" target="_blank"><img src="upload/uploaddata/20143621320691.jpg" alt="" title="ANL"></a></li>
+  
+  <li><a href="https://www.hapag-lloyd.com/en/online-business/tracing/tracing-by-container.html" target="_blank"><img src="upload/uploaddata/201436213116799.jpg" alt="" title="HPL"></a></li>
+  
+  <li><a href="http://www.zim.com/pages/findcontainer.aspx" target="_blank"><img src="upload/uploaddata/201436213027848.jpg" alt="" title="ZIM"></a></li>
+  
+  <li><a href="http://www.shipmentlink.com/servlet/TDB1_CargoTracking.do" target="_blank"><img src="upload/uploaddata/201436212859216.jpg" alt="" title="EMC"></a></li>
+  
+  <li><a href="https://www.msc.com/hkg/help-centre/tools/track-a-shipment" target="_blank"><img src="upload/uploaddata/201436212748982.jpg" alt="" title="MSC"></a></li>
+      
+      </ul><ul id="marquePic2"></ul>
+ </div></div>
+
+<div class="clear"></div>
+<div class="bottom"><div class="container foot"><p><a href="index.asp">HOME</a></p><p><a href="about.asp">ABOUT</a></p><p><a href="service.asp">SERVICE</a></p><p><a href="tracin.asp">CARGO TRACKING</a></p><p><a href="careers.asp">CAREERS</a></p><p><a href="contact.asp">CONTACT</a></p></div></div>
+<div class="footr"><p class="container">Copyright © 2013 Cnuul.com All Rights Reserved. <a href="http://www.g363.com" target="_blank">Google</a></p></div>
+
+<script language="javascript" src="js/jquery-zver.cn.js"></script>
+
+
+
+<script>$().ready(function(){$(".nav li a:eq(0)").addClass("now");});</script>
+</body>
+</html>

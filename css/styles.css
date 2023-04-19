@@ -1,0 +1,1200 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+	vertical-align: middle;
+	font-family: "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-style: normal;
+}
+
+.ground{
+	width: 1200px;
+	height: auto;
+	margin-top: 5;
+	border-bottom-style: solid;
+	border: #333333;
+/*border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;*/
+	
+	
+}
+/*NAVEGADOR*/
+.nav {
+	width: 1160px;
+	height: 68px;
+	margin: 0 auto;
+	text-align: left;
+	background-color: lightgrey;
+	text-decoration: none;
+  }
+  
+  .nav li {
+	list-style: none;
+	float: left;
+	height: 100%;
+	line-height: 68px;
+	text-align: center;
+	font-family: "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+	font-style: normal;
+	font-size: 16px;
+	font-weight: None;
+	color: #333333;
+	margin-right: 28px;
+	text-decoration: none;
+  }
+  
+  .nav .selected {
+	background-color: #d3d3d3;
+	color: #333333;
+	text-decoration: none;
+  }
+  
+  .nav .login {
+	line-height: 30px;
+	float: right;
+	width: 160px;
+	height: 30px;
+	vertical-align: top;
+	text-align: center;
+	background-color: #41B357;
+	color: #ffffff;
+	margin-top: 20px;
+	margin-right: -6px;
+  }
+  
+  .nav li:hover {
+	background: #2C58A7;
+	color: #41B357;
+	text-decoration: none;
+	width: 209px;
+  }
+  
+  .nav a {
+	color: #333333;
+	text-decoration: none;
+	padding: 20px;
+	transition: background-color 0s, color 0s;
+	
+  }
+  
+  .nav a:hover {
+	background: #2C58A7;
+	color: #41B357;
+	text-decoration: none;
+	width: 209px; /*BORRAR esto en caso de no gustar Menu y volver al anterior*/
+	
+  }
+  
+  .dropdown {
+	position: relative;
+  }
+  
+  .dropdown-menu {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	width: 209px;
+	padding: 16px;
+	margin: 0;
+	list-style-type: none;
+	background-color: #d3d3d3;
+	border: 1px solid #000;
+  }
+  
+  .dropdown-menu li {
+	text-align: center;
+	line-height: 40px;
+	min-width: max-content;
+	list-style: none;
+	float: left;
+	height: 100%;
+	line-height: 68px;
+	text-align: center;
+	font-family: "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+	font-style: normal;
+	font-size: 16px;
+	font-weight: None;
+	color: #333333;
+	margin-right: 28px;
+	text-decoration: none;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+	display: block;
+	max-width: auto;
+	max-height: auto;
+  }
+  .dropdown-menu ul li a{
+	
+		/*background: #2C58A7;
+		color: #41B357;*/
+		text-decoration: none;
+		max-width: auto;
+		max-height: auto;
+	  
+  }
+/*FIN DE NAVEGADOR*/
+
+.language{
+	
+	width: 300px;
+	text-align: right;
+	float: right;
+	
+}
+
+.logobanner{
+	margin: 0 auto;
+	width: 1200px;
+	line-height: 68px;
+	text-align: left;
+	
+	
+}
+
+
+.logobanner img{
+	vertical-align: middle;
+	width: 200px;
+	height: 38px;
+	
+}
+
+/* banner图的长宽在这里设置 */
+
+.ban_img {
+	margin-top: 0px;
+    position: relative;
+    width: 1200px;
+    height: 328px;
+    background-color: #CCCCCC;
+}
+
+/* 切换到上一张图的按钮 */
+
+.arr_l {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    /*opacity: 0.0完全透明; 1.0完全不透明*/
+    opacity: 0.0;
+    z-index: 99;
+}
+
+.arr_l:hover {
+    /*opacity: 0.0完全透明; 1.0完全不透明*/
+    opacity: 1.0;
+    /* filter: drop-shadow(#DCDCDC 0 0); */
+}
+
+/* 切换到下一张图的按钮 */
+
+.arr_r {
+    position: absolute;
+    top: 100px;
+    left: 800px;
+    /*opacity: 0.0完全透明; 1.0完全不透明*/
+    opacity: 0.0;
+    z-index: 99;
+}
+
+.arr_r:hover {
+    /*opacity: 0.0完全透明; 1.0完全不透明*/
+    opacity: 1.0;
+    /* filter: drop-shadow(#DCDCDC 0 0); */
+}
+
+/* banner图下方的页卡 */
+
+.banner_page {
+    position: absolute;
+    top: 280px;
+    left: 20px;
+    /* left: 450px; */
+}
+
+.banner span {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    text-align: center;
+    color: #808080;
+    border: #808080 solid 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.current_page {
+    /* 当前banner页卡添加突出的背景色 */
+    background-color: orangered;
+    color:ghostwhite;
+}
+
+.service{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 480px;
+	
+}
+
+.servicebox{
+	width: 12empco00px;
+	margin: 0 auto;
+	height: 480px;
+	
+}
+
+
+
+.serviceINDEX{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 480px;
+	
+}
+.serviceboxINDEX{
+	width: 1200px;
+	margin: 0 auto;
+	height: 480px;
+	
+}
+
+
+
+
+
+
+
+
+/*Fotos con descripcion*/
+
+
+.littlebox{
+	width: 360px;
+	height: 480px;
+	border: solid 1px;
+	border-color: #CCCCCC;
+	float: left;
+	margin-right: 50px;
+
+	
+	
+}
+.littlebox img {
+		width: 360px;
+		height: 240px;
+	}
+.littlebox p{
+	width: 360px;
+	margin: 0 auto;
+	font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+	font-style: normal;
+    font-size: 15px;
+    font-weight: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.littlebox span{
+	display: block;
+	width: 300px;
+	margin:0 auto;
+	font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+	font-style: normal;
+    font-size: 15px;
+	line-height: 25px;
+	text-align: justify;
+	color: #2C58A7;
+}
+
+
+.littlerightbox{
+	width: 360px;
+	height: 480px;
+	border: solid 1px;
+	border-color: #CCCCCC;
+	float: right;
+}
+.littlerightbox img{
+	width: 360px; 
+}
+.littlerightbox p{
+	width: 360px;
+	margin: 0 auto;
+	font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+	font-style: normal;
+    font-size: 15px;
+    font-weight: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.littlerightbox span{
+	display: block;
+	width: 300px;
+	margin:0 auto;
+	font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+	font-style: normal;
+    font-size: 15px;
+	line-height: 25px;
+	text-align: justify;
+	color: #2C58A7;
+}
+
+
+/*Fotos de servicios INDEX*/
+
+.littleboxA{
+	width: 226px;
+	height: 480px;
+	border: solid 1px;
+	border-color: #CCCCCC;
+	float: left;
+	margin-right: 15px;
+
+	
+	
+}
+.littleboxA img {
+		width: 226px;
+		height: 240px;
+	}
+.littleboxA p{
+	width: 235px;
+	margin: 0 auto;
+	font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+	font-style: normal;
+    font-size: 15px;
+    font-weight: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.littleboxA span{
+	display: block;
+	width: 173px;
+	margin:auto;
+	font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+	font-style: normal;
+    font-size: 15px;
+	line-height: 25px;
+	text-align: center;
+	color: #2C58A7;
+}
+
+
+
+
+
+
+.littleboxB{
+	width: 226px;
+	height: 480px;
+	border: solid 1px;
+	border-color: #CCCCCC;
+	float: left;
+	margin-right: 15px;
+
+	
+	
+}
+.littleboxB img {
+		width: 226px;
+		height: 240px;
+	}
+.littleboxB p{
+	width: 230px;
+	margin: 0 auto;
+	font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+	font-style: normal;
+    font-size: 15px;
+    font-weight: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.littleboxB span{
+	display: block;
+	width: 185px;
+	margin: auto;
+	font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+	font-style: normal;
+    font-size: 15px;
+	line-height: 25px;
+	text-align: center;
+	color: #2C58A7;
+}
+
+
+
+
+
+
+
+
+.littlerightboxC{
+	width: 226px;
+	height: 480px;
+	border: solid 1px;
+	border-color: #CCCCCC;
+	float: left;
+}
+.littlerightboxC img{
+	width: 226px; 
+	height: 240px;
+}
+.littlerightboxC p{
+	width: 230px;
+	margin: 0 auto;
+	font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+	font-style: normal;
+    font-size: 15px;
+    font-weight: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.littlerightboxC span{
+	display: block;
+	width: 180px;
+	margin: auto;
+	font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+	font-style: normal;
+    font-size: 15px;
+	line-height: 25px;
+	text-align: center;
+	color: #2C58A7;
+}
+
+
+.littlerightboxD{
+	width: 226px;
+	height: 480px;
+	border: solid 1px;
+	border-color: #CCCCCC;
+	float: left;
+	margin-left: 15px;
+}
+.littlerightboxD img{
+	width: 226px; 
+	height: 240px;
+}
+.littlerightboxD p{
+	width: 230px;
+	margin: 0 auto;
+	font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+	font-style: normal;
+    font-size: 15px;
+    font-weight: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.littlerightboxD span{
+	display: block;
+	width: 214px;
+	margin: auto;
+	font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+	font-style: normal;
+    font-size: 15px;
+	line-height: 25px;
+	text-align: center;
+	color: #2C58A7;
+}
+
+
+
+
+.littlerightboxE{
+	width: 226px;
+	height: 480px;
+	border: solid 1px;
+	border-color: #CCCCCC;
+	float: left;
+	margin-left: 15px;
+}
+.littlerightboxE img{
+	width: 226px; 
+	height: 240px;
+}
+.littlerightboxE p{
+	width: 230px;
+	margin: 0 auto;
+	font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+	font-style: normal;
+    font-size: 15px;
+    font-weight: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.littlerightboxE span{
+	display: block;
+	width: 214px;
+	margin: auto;
+	font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+	font-style: normal;
+    font-size: 15px;
+	line-height: 19px;
+	text-align: center;
+	color: #2C58A7;
+}
+
+
+/*
+
+.footer{
+	display: block;
+	width: 1200;
+	margin: 0 auto;
+	color: #CCCCCC;
+	text-align: center;
+	/*vertical-align: middle; 
+	margin-bottom: 20px;
+
+	
+}
+.footer img{
+	width: 1200px;
+
+}
+.footer p{
+	display: block;
+	width: 1200px;
+	margin:0 auto;
+	color: #CCCCCC;
+	
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-style: normal;
+    font-size: 10px;
+	
+	
+}
+*/
+.aboutus {
+	text-align: left;
+	margin: 0 auto;
+	width: 1200px;
+	height: 280px;
+	/*border-bottom: solid 2px #2C58A7;
+	margin-bottom: 50px; */
+	position: relative;
+}
+.title{
+	margin: 0 auto;
+	width: 600px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+	font-style: normal;
+    font-size: 20px;
+	font-weight: none;
+	background:  url( "../images/line.png") no-repeat 0 50%;
+	
+}
+
+.aboutus img{
+	width: 300px;
+	height: 200px;
+	text-align: left;
+	position: absolute;
+	bottom: 20px;
+	margin-left: 2px;
+	
+}
+
+.aboutusEMPRESA {
+	text-align: left;
+	margin: 0 auto;
+	width: 1200px;
+	height: 280px;
+	/*border-bottom: solid 2px #2C58A7;
+	margin-bottom: 50px; */
+	position: relative;
+	margin-top: -26px;
+    margin-bottom: -26px;
+}
+.aboutusEMPRESA img{
+	width: 300px;
+	height: 200px;
+	text-align: left;
+	position: absolute;
+	bottom: 20px;
+	margin-left: 898px;
+	
+}
+
+
+
+
+
+
+.nuetrosempresa{
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	color: #000;
+	font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", "sans-serif";;
+	font-style: normal;
+    font-size: 18px;
+	font-weight: none;
+	background-color: #d3d3d3;
+	position: absolute;
+	left: 527px;
+	bottom: 160px;
+	z-index: 99;
+	text-align: center;
+}
+
+.empcontentEMPRESA {
+	width: 855px;
+	height: 120px;
+	border: solid 1px #CCCCCC;
+	position: absolute;
+	left: 2px;
+	bottom: 20px;
+	z-index: 1;
+	padding-top: 78px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+	font-style: normal;
+	font-size: 18px;
+	text-align: justify;
+	line-height: 24px;
+}
+
+
+.nuestraempresa {
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	color: #ffffff;
+	font-family: "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+	font-style: normal;
+	font-size: 18px;
+	font-weight: none;
+	background-color: #2C58A7;
+	position: absolute;
+	left: 620px;
+	bottom: 160px;
+	z-index: 99;
+}
+
+.Boton {
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 20px;
+	color: #ffffff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	background-color: #005BBB;
+	width: 1;
+	height: 0;
+	line-height: 0;
+	color: #ffffff;
+	font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+	font-style: normal;
+	font-size: 18px;
+	font-weight: none;
+	background-color: #2C58A7;
+	position: absolute;
+	left: 620px;
+	bottom: 160px;
+	z-index: 99;
+}
+
+.BotonEMPRESA {
+	text-decoration: none;
+    /* font-weight: 600; */
+    font-size: 20px;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #005BBB;
+    width: 1;
+    height: 0;
+    line-height: 0;
+    color: #000000;
+    font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: none;
+    background-color: #d3d3d3;
+    position: absolute;
+    left: 498px;
+    bottom: 160px;
+    z-index: 99;
+}
+
+
+.empcontent {
+	width: 855px;
+	height: 120px;
+	border: solid 1px #CCCCCC;
+	position: absolute;
+	left: 302px;
+	bottom: 20px;
+	z-index: 1;
+	padding-top: 78px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+	font-style: normal;
+	font-size: 18px;
+	text-align: justify;
+	line-height: 24px;
+}
+
+
+.empcontentINDEX {
+	width: 1200px;
+	height: 120px;
+	border: solid 1px #000;
+	position: relative;
+	font-size: 26px;
+    font-style: normal;
+	
+}
+
+
+
+.table {
+	margin: auto;
+	width: 882px;
+	height: 200px;
+	text-align: center;
+	border: 1px solid #000;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+}
+
+th, td {
+	text-align: left;
+	padding: 8px;
+	border-bottom: 1px solid #000;
+}
+
+th {
+	background-color: #2C58A7;
+	color: white;
+}
+
+tr:hover {
+	background-color: #f5f5f5;
+}
+
+th, td {
+	width: 15%;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #000;
+	border-spacing: 0;
+}
+
+
+
+/*formularios css*/
+
+
+.contact_form {
+	width: 460px;
+	height: auto;
+	margin: 63px auto;
+	border-radius: 10px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	background-color: #d3d3d3;
+	padding-left: none;
+	left: -10px;
+	right: 10px;
+}
+
+
+input {
+	background-color: #fbfbfb;
+	width: 408px;
+	height: 40px;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000;
+	margin-top: 10px;
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+
+
+textarea {
+	background-color: #fbfbfb;
+	width: 405px;
+	height: 150px;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000;
+	margin-top: 10px;
+	padding-left: 10px;
+	margin-bottom: 20px;
+	padding-top: 15px;
+}
+
+
+
+button {
+	/*height: 45px;*/
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	text-transform: uppercase;
+	background-color: #000;
+	border-color: #000;
+	border-style: solid;
+	border-radius: 10px;
+	width: 420px;
+	cursor: pointer;
+}
+
+
+
+button p {
+	color: #fff;
+}
+
+
+span {
+	color: #000;
+}
+
+
+.aviso {
+	font-size: 13px;
+	color: #000;
+}
+
+
+h1 {
+	font-size: 39px;
+	text-align: letf;
+	padding-bottom: 20px;
+	color: #000;
+}
+
+
+h3 {
+	font-size: 16px;
+	padding-bottom: 30px;
+	color: #000;
+}
+
+
+p {
+	font-size: 14px;
+	color: #000;
+}
+
+
+::-webkit-input-placeholder {
+	color: #000;
+}
+
+
+::-webkit-textarea-placeholder {
+	color: #000;
+}
+
+
+.formulario input:focus {
+	outline: 0;
+	border: 1px solid #000;
+	float: left;
+}
+
+
+.formulario textarea:focus {
+	outline: 0;
+	border: 1px solid #000;
+	float: left;
+}
+
+/*FIN DEL FORMULARIO*/
+
+
+
+
+
+/*INTENTO DE BUTTON TRANSLATE*/
+.language-switcher {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 20px;
+}
+
+	.language-switcher button {
+		background-color: #eee;
+		border: none;
+		border-radius: 5px;
+		color: #444;
+		cursor: pointer;
+		font-size: 16px;
+		margin-right: 10px;
+		outline: none;
+		padding: 10px 15px;
+		transition: background-color 0.3s ease;
+	}
+
+		.language-switcher button:hover {
+			background-color: #ddd;
+		}
+
+		.language-switcher button.active {
+			background-color: #007bff;
+			color: #fff;
+		}
+/*fIN DEL BUTTON*/
+
+
+
+/*CAJA DE TEXTO*/
+		.caja-texto {
+			background-color: #F2F2F2;
+			border: 1px solid #000;
+			padding: 20px;
+			font-size: 16px;
+			color: #000;
+			line-height: 1.5;
+		  }
+		  
+		  .caja-texto p {
+			margin: 0;
+		  }
+		  
+
+
+
+
+		/*
+		.formulario img{
+			width: 360px;
+			height: 200px;
+			text-align: left;
+			position: absolute;
+			bottom: 452px;
+			margin-left: 242px;
+		}
+		.formulario .img2{ 
+			width: 360px;
+			height: 200px;
+			text-align: auto;
+			position: absolute;
+			bottom: 250px;
+			margin-left: 242px;
+		} 
+		*/
+
+		
+
+		.container{
+			max-width: 1200px;
+			margin:auto;
+		  }
+		
+		.container p{
+			text-align: center;
+   			font-size: 9px;
+    		line-height: 1.5;
+    		color: #d3d3d3;
+		}
+
+		  .row{
+			display: flex;
+			flex-wrap: wrap;
+		  }
+		  ul{
+			list-style: none;
+			width: 196px
+		  }
+
+
+
+		  /*footer*/
+		  .footer{
+			background-color: #24262b;
+			padding: 65px 0;
+			text-align: left;
+   			margin: 0 auto;
+    		width: 1200px;
+    		height: 280px;
+    		position: relative;
+			margin-top: 20px;
+		  }
+		  .footer-col{
+			 width: 24%;
+			 padding: 1px;
+			 color: #d3d3d3;
+			 list-style-type: none
+		  }
+		  .footer-col h4{
+			font-size: 18px;
+			color: #ffffff;
+			text-transform: capitalize;
+			margin-bottom: 35px;
+			font-weight: 500;
+			position: relative;
+			margin-left: 35px;
+		  }
+		  .footer-col h4::before{
+			content: '';
+			position: absolute;
+			left: 12px;
+			bottom: -10px;
+			background-color: #41b357;
+			height: 2px;
+			box-sizing: border-box;
+			width: 50px;
+		  }
+		  .footer-col ul li:not(:last-child){
+			margin-bottom: 10px;
+		  }
+		  .footer-col ul li a{
+			font-size: 16px;
+			text-transform: capitalize;
+			color: #41B357;
+			text-decoration: none;
+			font-weight: 300;
+			color: #d3d3d3;
+			display: block;
+			transition: all 0.3s ease;
+		  }
+		  .footer-col ul li a:hover{
+			color: #41B357;
+			padding-left: 8px;
+		  }
+		  
+		  
+		 
+		  
+		  /*responsive*/
+		  @media(max-width: 767px){
+			.footer-col{
+			  width: 50%;
+			  margin-bottom: 30px;
+		  }
+		  }
+		  @media(max-width: 574px){
+			.footer-col{
+			  width: 100%;
+		  }
+		  }
+
+
+
+		  .caja {
+			background-color: #ffffff;
+			border: 1px solid #000;
+			padding: 20px;
+			width: 1160px;
+			margin: 0 auto;
+			margin-top:  15px;;
+		  }
+		  
+		  p {
+			text-align: center;
+			font-size: 25px;
+			line-height: 1.5;
+		  }
+		  
+
+
+		  .titleEMPRESA{
+			margin: 0 auto;
+			width: 600px;
+			height: 60px;
+			line-height: 60px;
+			text-align: center;
+			vertical-align: middle;
+			font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
+			font-style: normal;
+			font-size: 30px;
+			font-weight: none;
+			background:  url( "../images/line.png") no-repeat 0 50%;
+			
+		}
+
+
+		  .cajaEMPRESA {
+			background-color: #ffffff;
+			border: 1px solid #000;
+			padding: 20px;
+			width: 792px;
+			margin-left: 350px;
+		  }
+		  
+		  p {
+			text-align: center;
+			font-size: 25px;
+			line-height: 1.5;
+		  }
+
+		  .cajaEMPRESA2 {
+			background-color: #ffffff;
+			border: 1px solid #000;
+			padding: 20px;
+			width: 792px;
+			margin-left: 719px;
+			margin-top: 15px;
+		
+		  }
+		  
+		  p {
+			text-align: center;
+			font-size: 25px;
+			line-height: 1.5;
+		  }
+
+
+
+
+
+		  
+		  .cuadro-texto {
+			background-color: #ffffff;
+			border: 1px solid #000;
+			padding: 20px;
+			width: 1160px;
+			margin: 0 auto;
+			margin-top:  15px;;
+			border-radius: 5px;
+			line-height: 1.5;
+			color: #000
+			;
+		  }
+		  /* Estilos para los encabezados del cuadro de texto */
+		  .encabezado {
+			font-weight: bold;
+		  }
+		  /* Estilos para los enlaces */
+		  a {
+			color: #007bff;
+			text-decoration: none;
+		  }
+		  a:hover {
+			text-decoration: underline;
+		  }
+		  .cuadro-texto ul li {
+			text-align: center;
+			font-size: 25px;
+			line-height: 1.5;
+		  }

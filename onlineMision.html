@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>U.S. UNITED LOGISTIC CHILE</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link type="text/css" href="css/styles.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+<STYLE>a {text-decoration: none;} </STYLE>
+	
+</head>
+
+<body>
+	
+	<!--Logo部分-->
+	<div class="logobanner">
+		<img src="images/logo1.png" alt="" />
+		<div class="language">
+			<label for="language">language:</label>
+			<select id="language" name="language">
+				<option value="CHINESE"><image src="images/l-china.jpg" />中文</option>
+				<option value="ESPAÑOL" selected>ESPAÑOL</option>
+			</select>
+		</div>
+	</div>
+
+	<!--导航部分-->
+	<ul class="nav">
+		<li><a href="onlineJM.html"><FONT COLOR="333333" class="selected">HOME</li></a>
+		<li><a href="onlineEMPRESA.html"><FONT COLOR="#333333">EMPRESA </FONT></a></li>
+		<li><a href="onlineSERVICIOS.html"><FONT COLOR="#333333">SERVICIOS </FONT></a></li>
+		<li><a href="onlineCOTIZACION.html"><FONT COLOR="#333333">COTIZACION </FONT></a></li>
+		<li><a href="onlineCONTACTO.html"><FONT COLOR="#333333">CONTACTENOS </FONT></a></li>
+		<li><a href="onlineTRABAJOS.html"><FONT COLOR="#333333">TRABAJOS</FONT></a></li>
+		<div class="login"
+		<li><a href="onlineLOGIN.html"><FONT COLOR="#FFFFFF">LOGIN</FONT></a></li></div>
+	</ul>
+	<div class="aboutus">
+		<div class="title">NUESTRA MISION</div>
+		<img src="images/businessteam.jpg" alt="" />
+
+		<div class="empcontent">&nbsp;&nbsp;Ofrecer servicios logísticos especializados de alta calidad para cargas especiales y complejas, superando las expectativas de nuestros clientes y estableciendo relaciones de confianza a largo plazo.</div>
+	</div>
+	<table class="table">
+		<div class="title"> <b>REGISTRO HISTORICO</b> </div>
+
+		<thead>
+			<tr>
+				<th>Numero</th>
+				<th>AÑO</th>
+				<th>Pais</th>
+				<th>Proyecto</th>
+				<th>Volumen</th>
+			</tr>
+		</thead>
+		<tr>
+			<td>1</td>
+			<td>2019-2020</td>
+			<td>CHILE</td>
+			<td>
+				IMPORTACION PUERTA A PUERTA
+				CAMIÓN INTERIOR,
+				DESPACHO DE ADUANAS,
+				ALMACÉN
+			</td>
+			<td>500 Containers</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>2020-2021</td>
+			<td>CHILE</td>
+			<td>
+				IMPORTACION PUERTA A PUERTA
+				CAMIÓN INTERIOR,
+				DESPACHO DE ADUANAS,
+				ALMACÉN
+			</td>
+			<td>800 Containers</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>2021-2022</td>
+			<td>CHILE</td>
+			<td>
+				IMPORTACION PUERTA A PUERTA
+				CAMIÓN INTERIOR,
+				DESPACHO DE ADUANAS,
+				ALMACÉN
+			</td>
+			<td>1200 Containers</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>2022-2022.6</td>
+			<td>CHILE</td>
+			<td>
+				IMPORTACION PUERTA A PUERTA
+				CAMIÓN INTERIOR,
+				DESPACHO DE ADUANAS,
+				ALMACÉN
+			</td>
+			<td>800 Containers</td>
+		</tr>
+	</table>
+
+	<table class="table">
+		<div class="title"> <b>REGISTRO EXPORTACION</b> </div>
+		<thead>
+			<tr>
+				<th>Numero</th>
+				<th>Year</th>
+				<th>Pais</th>
+				<th>Proyecto</th>
+				<th>Volumen</th>
+			</tr>
+		</thead>
+		<tr>
+			<td>1</td>
+			<td>2019-2020</td>
+			<td>ECUADOR</td>
+			<td>PROYECTO MINERO</td>
+			<td>100 Containers</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>2020-2021</td>
+			<td>PERU</td>
+			<td>PROYECTO MINERO</td>
+			<td>800 Containers</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>2021-2022</td>
+			<td>CHILE</td>
+			<td>PROYECTO MINERO</td>
+			<td>1500 TON Concentrado de Cobre</td>
+		</tr>
+
+	</table>
+
+
+
+	<script>
+		var vv = new Vue({
+			el: "#app",
+			data: {
+				imgArr: [
+					"images/1.jpg",
+					"images/2.jpg",
+					"images/3.jpg",
+					"images/4.jpg",
+					"images/5.jpg",
+					// 图片理论上是可以无限加的
+				],
+				linkArr: [
+					"#",
+					"#",
+					"#",
+					"#",
+					"#",
+					//跳转的路径数量要和图片数量保持一致
+				],
+				index: 0,
+			},
+			created: function () {
+				//启动自动轮播banner图...5秒一换（可根据需要调整banner轮播速度）
+				window.setInterval(this.next, 5000);//1秒=1000*毫秒
+			},
+			methods: {
+				next: function () {
+					//点击切换下一图：
+					if (this.index < this.imgArr.length - 1) {
+						this.index++;
+					}
+					else {
+						this.index = 0;//循环到第1图
+					}
+				},
+				pervie: function () {
+					//点击切换上一图：
+					if (this.index > 0) {
+						this.index--;
+					}
+					else {
+						this.index = this.imgArr.length - 1;
+					}
+				},
+				click_banner: function (i) {
+					this.index = i;//点击跳转到指定的图
+				},
+			}
+
+		});
+	</script>
+
+	<div class="title"> <b>SERVICIOS</b> </div>
+
+	<!--3块服务部分-->
+	<div class="service">
+		<div class="servicebox">
+			<div class="littlebox">
+				<img src="images/shippingcontainers.jpg" alt="" />
+				<p>Servicio Aduana</p>
+				<span>&nbsp;&nbsp;Nuestra empresa Brinda con  servicios de intermediación aduanera eficientes y oportunos, asegurando el cumplimiento de los requisitos legales y aduaneros.</span>
+			</div>
+
+			<div class="littlebox">
+				<img src="images/Airplane.jpg" alt="" />
+				<p>Transporte</p>
+				<span>&nbsp;&nbsp;Brindamos servicios especiales de transporte terrestre y de carga con la máxima seguridad y eficiencia, utilizando tecnología de punta y equipo especializado.</span>
+			</div>
+
+
+			<div class="littlerightbox">
+				<img src="images/shipping.jpg" alt="" />
+				<p>Servicios </p>
+				<span>&nbsp;&nbsp;Ofrecemos servicios rápidos y seguros de desconsolidación y descarga de carga, cumpliendo con los más altos estándares de calidad.</span>
+			</div>
+		</div>
+	</div>
+	<!--公司介绍-->
+
+
+	<div class="aboutus">
+		<div class="title">U.S. UNITED LOGISTIC CHILE</div>
+		<img src="images/TeamHands.jpg" alt="" />
+		<div class="nuetrosempresa">Nuestra Empresa</div>
+		<div class="empcontent">&nbsp;&nbsp;Nuestra empresa es un equipo global, una colección de transporte marítimo, aéreo y terrestre como un sistema integrado de logística internacional, con sucursales en gran parte del mundo , incluyendo Estados Unidos, China, Europa, África, Australia, Republica Dominicana, Peru y Chile</div>
+	</div>
+
+	<!--收尾-->
+	<div class="footer">
+		<img src="images/footer.jpg" alt="" />
+		<p align="right">Todos los derechos reservados por U.S.United Logistic Chile SpA.</p>
+		<p align="center">GRACIAS POR PREFERIRNOS. </p>
+
+	</div>
+
+</body>
+</html>
