@@ -22,6 +22,7 @@ border-bottom-right-radius: 10px;*/
 }
 
 
+
 /*NAVEGADOR*/
 .nav {
 	width: 1200px;
@@ -128,7 +129,7 @@ border-bottom-right-radius: 10px;*/
 	white-space: nowrap; /* esto evita que el texto se divida en varias líneas */
 	text-align: center;
   }
- /*PRUEBA DE CONTACTO*/
+   /*PRUEBA DE CONTACTO*/
   .nav .dropdown-menu2 {
 	display: none;
 	position: absolute;
@@ -171,7 +172,7 @@ border-bottom-right-radius: 10px;*/
 	text-align: center;
   }
   /*FIN DE PRUEBA DE CONTACTO EN CASO DE VOLVER BORRAR TODO EL DROPDOWN2*/
-
+  
 /*FIN DE NAVEGADOR*/
 
 .language{
@@ -389,20 +390,33 @@ border-bottom-right-radius: 10px;*/
 
 /*Fotos de servicios INDEX*/
 
-.littleboxA{
-	width: 226px;
-	height: 480px;
-	border: solid 1px;
-	border-color: #CCCCCC;
-	float: left;
-	margin-right: 15px;
-
-	
-	
+.littleboxA {
+    /* width: 226px; */
+    /* height: 480px; */
+    /* border: solid 1px; */
+    /* border-color: #CCCCCC; */
+    /* float: left; */
+    /* margin-right: 15px; */
+    width: 226px;
+    height: 480px;
+    border-color: #CCCCCC;
+    float: left;
+    margin-right: 15px;
+    background-color: #ffffff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .littleboxA img {
 		width: 226px;
 		height: 240px;
+		border-top-left-radius: 8px;
+    	border-top-right-radius: 8px;
 	}
 .littleboxA p{
 	width: 235px;
@@ -431,20 +445,33 @@ border-bottom-right-radius: 10px;*/
 
 
 
-.littleboxB{
-	width: 226px;
-	height: 480px;
-	border: solid 1px;
-	border-color: #CCCCCC;
-	float: left;
-	margin-right: 15px;
-
-	
-	
+.littleboxB {
+    width: 226px;
+    height: 480px;
+    border: solid 1px;
+    border-color: #CCCCCC;
+    float: left;
+    margin-right: 15px;
+    /* width: 226px; */
+    /* height: 480px; */
+    border-color: #CCCCCC;
+    float: left;
+    margin-right: 15px;
+    background-color: #ffffff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .littleboxB img {
 		width: 226px;
 		height: 240px;
+		border-top-left-radius: 8px;
+    	border-top-right-radius: 8px;
 	}
 .littleboxB p{
 	width: 230px;
@@ -475,16 +502,32 @@ border-bottom-right-radius: 10px;*/
 
 
 
-.littlerightboxC{
-	width: 226px;
-	height: 480px;
-	border: solid 1px;
-	border-color: #CCCCCC;
-	float: left;
+.littlerightboxC {
+    width: 226px;
+    height: 480px;
+    border: solid 1px;
+    border-color: #CCCCCC;
+    float: left;
+    /* width: 226px; */
+    /* height: 480px; */
+    border-color: #CCCCCC;
+    /* float: left; */
+    /* margin-right: 15px; */
+    background-color: #ffffff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .littlerightboxC img{
 	width: 226px; 
 	height: 240px;
+	border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 .littlerightboxC p{
 	width: 230px;
@@ -509,17 +552,33 @@ border-bottom-right-radius: 10px;*/
 }
 
 
-.littlerightboxD{
-	width: 226px;
-	height: 480px;
-	border: solid 1px;
-	border-color: #CCCCCC;
-	float: left;
-	margin-left: 15px;
+.littlerightboxD {
+    width: 226px;
+    height: 480px;
+    border: solid 1px;
+    border-color: #CCCCCC;
+    float: left;
+    margin-left: 15px;
+    /* width: 226px; */
+    /* height: 480px; */
+    border-color: #CCCCCC;
+    float: left;
+    /* margin-right: 15px; */
+    background-color: #ffffff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .littlerightboxD img{
 	width: 226px; 
 	height: 240px;
+	border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 .littlerightboxD p{
 	width: 230px;
@@ -546,17 +605,33 @@ border-bottom-right-radius: 10px;*/
 
 
 
-.littlerightboxE{
-	width: 226px;
-	height: 480px;
-	border: solid 1px;
-	border-color: #CCCCCC;
-	float: left;
-	margin-left: 15px;
+.littlerightboxE {
+    width: 226px;
+    height: 480px;
+    border: solid 1px;
+    border-color: #CCCCCC;
+    float: left;
+    margin-left: 15px;
+    /* width: 226px; */
+    /* height: 480px; */
+    border-color: #CCCCCC;
+    float: left;
+    /* margin-right: 15px; */
+    background-color: #ffffff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .littlerightboxE img{
 	width: 226px; 
 	height: 240px;
+	border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 .littlerightboxE p{
 	width: 230px;
@@ -1140,19 +1215,24 @@ p {
 
 		  .caja {
 			background-color: #ffffff;
-			border: 1px solid #000;
-			padding: 20px;
-			width: 1160px;
-			margin: 0 auto;
-			margin-top:  15px;;
+    		border: 1px solid #000;
+    		padding: 20px;
+    		width: 673px;
+    		margin: 0 auto;
+    		margin-top: 15px;
+    		white-space: nowrap;
 		  }
 		  
 		  p {
 			text-align: center;
-			font-size: 25px;
+			font-size: 15px;
 			line-height: 1.5;
 		  }
-		  
+		  .caja img{
+			width: 300px;
+   			height: 200px;
+    		
+		  }
 
 
 		  .titleEMPRESA{
@@ -1181,7 +1261,7 @@ p {
 		  
 		  p {
 			text-align: center;
-			font-size: 25px;
+			font-size: 15px;
 			line-height: 1.5;
 		  }
 
@@ -1197,7 +1277,7 @@ p {
 		  
 		  p {
 			text-align: center;
-			font-size: 25px;
+			font-size: 15px;
 			line-height: 1.5;
 		  }
 
@@ -1235,3 +1315,88 @@ p {
 			font-size: 25px;
 			line-height: 1.5;
 		  }
+
+
+
+
+
+
+
+		  .containerPRUEBA {
+			background-color: #ffffff;
+    		border: 1px solid #000;
+    		padding: 20px;
+    		width: 673px;
+    		margin: 0 auto;
+    		margin-top: 15px;
+    		white-space: nowrap;
+		  }
+		  
+		  .titlePRUEBA{
+			margin: 0 auto;
+			width: 100%;
+			height: 60px;
+			line-height: 60px;
+			text-align: center;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 36px;
+			font-weight: bold;
+			color: #333333;
+			background:  url( "../images/line.png") no-repeat 0 50%;
+		  }
+		  
+		  .box-containerPRUEBA {
+			background-color: #ffffff;
+    		border: 1px solid #000;
+    		width: 1100px;
+    		margin: 0 auto;
+			border-radius: 8px;
+			
+			box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+			padding: 20px;
+			margin-top: 15px;
+			display: flex;
+    		justify-content: center;
+    		flex-wrap: wrap;
+    		align-content: stretch;
+    		flex-direction: row;
+    		align-items: center;
+		  }
+		  
+		  .box-containerPRUEBA img {
+			width: 300px;
+			height: 200px;
+			object-fit: cover;
+			border-radius: 4px;
+		  }
+		  
+		  .box-containerPRUEBA p {
+			font-size: 20px;
+			line-height: 1.5;
+			margin-left: 30px;
+			max-width: 600px;
+			font-family: 'Roboto', sans-serif;
+			color: #333333;
+		  }
+		  
+		  @media only screen and (max-width: 768px) {
+			.box-containerPRUEBA {
+			  flex-direction: column;
+			  justify-content: center;
+			}
+		  
+			.box-containerPRUEBA img {
+			  margin-bottom: 20px;
+			}
+		  
+			.box-containerPRUEBA p {
+			  margin-left: 0;
+			  text-align: center;
+			}
+		  }
+		  
+
+
+
+
+		  
