@@ -1217,7 +1217,7 @@ p {
 			background-color: #ffffff;
     		border: 1px solid #000;
     		padding: 20px;
-    		width: 673px;
+    		width: 1100px;
     		margin: 0 auto;
     		margin-top: 15px;
     		white-space: nowrap;
@@ -1323,13 +1323,7 @@ p {
 
 
 		  .containerPRUEBA {
-			background-color: #ffffff;
-    		border: 1px solid #000;
-    		padding: 20px;
-    		width: 673px;
-    		margin: 0 auto;
-    		margin-top: 15px;
-    		white-space: nowrap;
+			display: block;
 		  }
 		  
 		  .titlePRUEBA{
@@ -1348,15 +1342,14 @@ p {
 		  .box-containerPRUEBA {
 			background-color: #ffffff;
     		border: 1px solid #000;
-    		width: 1100px;
+    		width: 1158px;
     		margin: 0 auto;
-			border-radius: 8px;
-			
-			box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-			padding: 20px;
-			margin-top: 15px;
-			display: flex;
-    		justify-content: center;
+    		border-radius: 8px;
+    		box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    		padding: 20px;
+    		/* margin-top: 15px; */
+    		display: flex;
+    		justify-content: space-evenly;
     		flex-wrap: wrap;
     		align-content: stretch;
     		flex-direction: row;
@@ -1394,9 +1387,269 @@ p {
 			  text-align: center;
 			}
 		  }
+
+
+
+		  /* Counteriner Empresa con foto a la Izq*/
+
+
+		  .containerEmpresaPrueba {
+			display: block;
+		  }
 		  
-
-
-
-
+		  .titleEmpresaPrueba{
+			margin: 0 auto;
+			width: 100%;
+			height: 60px;
+			line-height: 60px;
+			text-align: center;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 36px;
+			font-weight: bold;
+			color: #333333;
+			background:  url( "../images/line.png") no-repeat 0 50%;
+		  }
 		  
+		  .box-containerEmpresaPrueba {
+			background-color: #ffffff;
+    		border: 1px solid #000;
+   			width: 1100px;
+    		margin: 0 auto;
+    		border-radius: 149px;
+    		box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    		padding: 20px;
+    		margin-top: 15px;
+    		display: flex;
+    		justify-content: flex-start;
+    		flex-wrap: nowrap;
+    		align-content: center;
+    		flex-direction: row;
+    		align-items: center;
+		  }
+		  
+		  .box-containerEmpresaPrueba img {
+			width: 300px;
+			height: 200px;
+			object-fit: cover;
+			/* border-radius: 4px; */
+			border-top-left-radius: 122PX;
+			border-bottom-left-radius: 122px;
+		  }
+		  
+		  .box-containerEmpresaPrueba p {
+			font-size: 20px;
+			line-height: 1.5;
+			margin-left: 66px;
+			max-width: 600px;
+			font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+			color: black;
+		  }
+		  
+		  @media only screen and (max-width: 768px) {
+			.box-containerEmpresaPrueba {
+			  flex-direction: column;
+			  justify-content: center;
+			}
+		  
+			.box-containerEmpresaPrueba img {
+			  margin-bottom: 20px;
+			}
+		  
+			.box-containerEmpresaPrueba p {
+			  margin-left: 0;
+			  text-align: center;
+			}
+		  }
+
+
+
+
+
+		  /*Conteiner empresa foto a la derecha*/
+
+
+		  .containerEmpresaPruebaDerecha {
+			display: block;
+		  }
+		  
+		  .titleEmpresaPruebaDerecha{
+			margin: 0 auto;
+			width: 100%;
+			height: 60px;
+			line-height: 60px;
+			text-align: center;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 36px;
+			font-weight: bold;
+			color: #333333;
+			background:  url( "../images/line.png") no-repeat 0 50%;
+		  }
+		  
+		  .box-containerEmpresaPruebaDerecha {
+			background-color: #ffffff;
+    		border: 1px solid #000;
+    		width: 1100px;
+    		margin: 0 auto;
+    		border-radius: 149px;
+    		box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    		padding: 20px;
+    		margin-top: 15px;
+    		display: flex;
+    		justify-content: flex-start;
+    		flex-wrap: nowrap;
+    		align-content: center;
+    		flex-direction: row-reverse;
+    		align-items: center;
+		  }
+		  
+		  .box-containerEmpresaPruebaDerecha img {
+			width: 300px;
+			height: 200px;
+			object-fit: cover;
+			/* border-radius: 4px; */
+			border-top-right-radius: 122PX;
+   			border-bottom-right-radius: 122px;
+		  }
+		  
+		  .box-containerEmpresaPruebaDerecha p {
+			font-size: 20px;
+			line-height: 1.5;
+			margin-left: 66px;
+			max-width: 600px;
+			font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+			color: black;
+		  }
+		  
+		  @media only screen and (max-width: 768px) {
+			.box-containerEmpresaPruebaDerecha {
+			  flex-direction: column;
+			  justify-content: center;
+			}
+		  
+			.box-containerEmpresaPruebaDerecha img {
+			  margin-bottom: 20px;
+			}
+		  
+			.box-containerEmpresaPruebaDerecha p {
+			  margin-left: 0;
+			  text-align: center;
+			}
+		  }
+
+
+
+
+
+/*CONTAINER ADUANA*/
+
+.containerADUANA {
+	display: block;
+	margin-top: 15px;
+  }
+  
+  .titleADUANA{
+	margin: 0 auto;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 36px;
+	font-weight: bold;
+	color: #333333;
+	background:  url( "../images/line.png") no-repeat 0 50%;
+  }
+  
+  .box-containerADUANA {
+	background-color: #ffffff;
+    border: 1px solid #000;
+    width: 1158px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* margin-top: 15px; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: stretch;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  
+  .box-containerADUANA img {
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 4px;
+  }
+  
+  .box-containerADUANA p {
+	font-size: 20px;
+	line-height: 1.5;
+	margin-left: 30px;
+	max-width: 600px;
+	font-family: 'Roboto', sans-serif;
+	color: #333333;
+  }
+  
+  @media only screen and (max-width: 768px) {
+	.box-containerADUANA {
+	  flex-direction: column;
+	  justify-content: center;
+	}
+  
+	.box-containerADUANA img {
+	  margin-bottom: 20px;
+	}
+  
+	.box-containerADUANA p {
+	  margin-left: 0;
+	  text-align: center;
+	}
+  }
+
+
+
+
+/*prueba para aduana parte 2*/
+
+
+.servicesADUANA-container {
+	background-color: #f7f7f7;
+    padding: 40px;
+    /* WIDTH: 1200PX; */
+    max-width: 1123px;
+    margin: 0 auto;
+    padding-top: 15px;
+    margin-top: 25px;
+  }
+  
+  .servicesADUANA-title {
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 40px;
+  }
+  
+  .servicesADUANA-content {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .servicesADUANA-item {
+	width: calc(100% / 3);
+	padding: 20px;
+	box-sizing: border-box;
+  }
+  
+  .servicesADUANA-subtitle {
+	font-size: 24px;
+	margin-bottom: 10px;
+  }
+  
+  .servicesADUANA-text {
+	font-size: 16px;
+	line-height: 1.5;
+  }
+  
+/*FINAL PRUEBA ADUANA*/
