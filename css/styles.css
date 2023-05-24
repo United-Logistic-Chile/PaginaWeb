@@ -7,6 +7,7 @@ body{
 	vertical-align: middle;
 	font-family: "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     font-style: normal;
+	zoom: 80%;
 }
 
 .ground{
@@ -193,7 +194,7 @@ border-bottom-right-radius: 10px;*/
 }
 
 
-.logobanner img{
+.logobanner a img{
 	vertical-align: middle;
 	width: 200px;
 	height: 38px;
@@ -284,7 +285,7 @@ border-bottom-right-radius: 10px;*/
 }
 
 .servicebox{
-	width: 12empco00px;
+	width: 1260px;
 	margin: 0 auto;
 	height: 480px;
 	
@@ -301,10 +302,18 @@ border-bottom-right-radius: 10px;*/
 	
 }
 .serviceboxINDEX{
-	width: 1200px;
-	margin: 0 auto;
+	/*width: 1260px;
+	margin: 0 /*auto;
 	height: 480px;
-	
+	display: flex;
+	flex-wrap: nowrap;*/
+	width: 1200px;
+    margin: 0 /*auto*/;
+    height: 480px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
@@ -698,16 +707,16 @@ border-bottom-right-radius: 10px;*/
 }
 .title{
 	margin: 0 auto;
-	width: 600px;
-	height: 60px;
-	line-height: 60px;
-	text-align: center;
-	vertical-align: middle;
-	font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;;
-	font-style: normal;
+    width: 1200px;
+    height: 90px;
+    line-height: 89px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-style: normal;
     font-size: 20px;
-	font-weight: none;
-	background:  url( "../images/line.png") no-repeat 0 50%;
+    font-weight: none;
+    background: url(../images/line.png) no-repeat 48%;
 	
 }
 
@@ -1197,8 +1206,8 @@ p {
 		  
 		  
 		 
-		  
-		  /*responsive*/
+		  /*
+		  /*responsive
 		  @media(max-width: 767px){
 			.footer-col{
 			  width: 50%;
@@ -1211,7 +1220,7 @@ p {
 		  }
 		  }
 
-
+*/
 
 		  .caja {
 			background-color: #ffffff;
@@ -1326,6 +1335,8 @@ p {
 			display: block;
 		  }
 		  
+
+		  
 		  .titlePRUEBA{
 			margin: 0 auto;
 			width: 100%;
@@ -1371,7 +1382,7 @@ p {
 			font-family: 'Roboto', sans-serif;
 			color: #333333;
 		  }
-		  
+		  /*
 		  @media only screen and (max-width: 768px) {
 			.box-containerPRUEBA {
 			  flex-direction: column;
@@ -1388,7 +1399,7 @@ p {
 			}
 		  }
 
-
+		  */
 
 		  /* Counteriner Empresa con foto a la Izq*/
 
@@ -1444,7 +1455,7 @@ p {
 			font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 			color: black;
 		  }
-		  
+		  /*
 		  @media only screen and (max-width: 768px) {
 			.box-containerEmpresaPrueba {
 			  flex-direction: column;
@@ -1461,7 +1472,7 @@ p {
 			}
 		  }
 
-
+/**/
 
 
 
@@ -1519,7 +1530,7 @@ p {
 			font-family: Constantia, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 			color: black;
 		  }
-		  
+		  /*
 		  @media only screen and (max-width: 768px) {
 			.box-containerEmpresaPruebaDerecha {
 			  flex-direction: column;
@@ -1536,7 +1547,7 @@ p {
 			}
 		  }
 
-
+*/
 
 
 
@@ -1593,6 +1604,9 @@ p {
 	color: #333333;
   }
   
+
+
+  /*
   @media only screen and (max-width: 768px) {
 	.box-containerADUANA {
 	  flex-direction: column;
@@ -1618,7 +1632,7 @@ p {
 .servicesADUANA-container {
 	background-color: #f7f7f7;
     padding: 40px;
-    /* WIDTH: 1200PX; */
+	WIDTH: 1200PX; 
     max-width: 1123px;
     margin: 0 auto;
     padding-top: 15px;
